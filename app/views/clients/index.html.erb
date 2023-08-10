@@ -1,0 +1,33 @@
+<div class="container">
+  <h1 class="title pt-5">Clients</h1>
+
+  <p style="color: white"><%= notice %></p>
+
+          <div class="col-12">
+            <div class="table-responsive rounded container" data-mdb-perfect-scrollbar="true" style="position: relative;">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Client N°</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col" class="w-50">Movie</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <% @clients.each do |client| %>
+                    <%= render client %>
+                  <% end %>
+                </tbody>
+              </table>
+            </div>
+            <%= link_to new_client_path, class: "btn add-button mt-3" do %>
+              <p>Add client</p>
+            <%end %>
+          </div>
+
+</div>
+

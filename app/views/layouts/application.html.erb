@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BlockBuster</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <body>
+    
+    <div class="container-fluid page">
+      <%= render "shared/navbar" %>
+
+      <div class="content m-3">
+        <div class="content-text">
+          <%= yield %>
+        </div>
+      </div>
+   
+  
+      
+    </div>
+  </body>
+</html>

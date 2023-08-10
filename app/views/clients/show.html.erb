@@ -1,0 +1,15 @@
+<div class="container pt-5 text-center">
+
+  <div class="form text-light">
+    <%= render @client %>
+
+  </div>
+
+  <div>
+    <%= link_to "Edit this client", edit_client_path(@client) %> |
+    <%= link_to "Back to clients", clients_path %>
+
+    <%= button_to "Destroy this client", @client, method: :delete %>
+  </div>
+  <p style="color: green"><%= notice %></p>
+</div>

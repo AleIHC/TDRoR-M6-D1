@@ -1,0 +1,17 @@
+
+  <div class="col-md-4 col-xl-4">
+            <div class="card bg-c-blue order-card">
+                <div class="card-block">               
+                    <h4 class="card-title"><%= movie.name %></h4>
+                    <hr>
+                    
+                        <%= link_to movie, class: "btn view-button ps-0" do %>
+                            <div class="card-content d-flex mt-0">
+                            <i class="bi bi-eye text-light"></i>
+                            <p class="mt-1 ms-2">Movie info</p>
+                            </div>
+                        <%end %>
+                    
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,23 @@
+<div class="container pt-5">
+
+    <%= render @movie, class:"me-0" %>
+  <div class="d-flex">
+    <%= link_to edit_movie_path(@movie), class: "btn add-button ps-0" do %>
+        <div class="card-content d-flex mt-0">
+          <p class="mt-1 ms-2">Edit this movie</p>
+        </div>
+    <%end %>
+    <%= link_to movies_path, class: "btn add-button ps-0" do %>
+        <div class="card-content d-flex mt-0">
+          <p class="mt-1 ms-2">Back to movies</p>
+        </div>
+    <%end %>
+
+      <%= button_to movie_path(@movie), method: :delete, class: "btn add-button ps-0"  do %>
+          <p class="mt-1 ms-2">Delete movie</p>
+        <%end %>
+
+    
+  </div>
+  <p style="color: green"><%= notice %></p>
+</div>

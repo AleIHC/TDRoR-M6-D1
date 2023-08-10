@@ -1,0 +1,20 @@
+<div class="container">
+    
+  <h1 class="title pt-5">Movies</h1>
+  <p style="color: green"><%= notice %></p>
+
+          <div class="col-12">
+            <div class="table-responsive rounded container" data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px;">
+              <div class="row">
+                <% @movies.each do |movie| %>
+                  <%= render movie %>
+                <% end %>
+            </div>
+          </div>
+
+    <%= link_to new_movie_path , class: "btn add-button mt-4" do %>
+      <p>Add movie</p>
+    <%end %>
+    
+  </div>
+</div>

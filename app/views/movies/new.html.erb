@@ -1,0 +1,12 @@
+<div class="container text-center">
+  <h1 class="title pt-5">New movie</h1>
+
+  <%= render "form", movie: @movie %>
+
+  <br>
+
+  <%= link_to movies_path, class: "btn add-button mt-3" do %>
+    <p>Back to movies</p>
+  <%end %>
+
+</div>
